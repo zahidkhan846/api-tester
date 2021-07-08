@@ -1,0 +1,39 @@
+.key-value {
+  width: 99%;
+  display: flex;
+  margin-bottom: 0.5rem;
+  height: 40px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-right: 0.5rem;
+}
+
+.key-value input {
+  flex-grow: 1;
+  font: inherit;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 0 1rem;
+}
+
+.key-value input:first-child {
+  border-right: 1px solid lightgray;
+}
+
+.key-value button {
+  width: 120px;
+  font: inherit;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: rgb(245, 216, 220);
+  color: rgb(197, 53, 53);
+  cursor: pointer;
+}
+
+.key-value button:hover {
+  background-color: rgb(197, 53, 53);
+  color: rgb(245, 216, 220);
+}

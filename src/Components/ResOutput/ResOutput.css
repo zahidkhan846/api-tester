@@ -1,0 +1,63 @@
+.res-output {
+  background-color: rgb(238, 235, 235);
+  color: var(--color-dark);
+  border-radius: 3px;
+  overflow: hidden;
+  /* padding: 1rem; */
+}
+
+.res-output h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.res-status {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.btn-tab {
+  padding: 0.7rem 1.4rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font: inherit;
+}
+
+.active {
+  background: var(--color-light);
+  color: var(--color-dark);
+  border-radius: 3px 3px 0 0;
+}
+
+.no-active {
+  background-color: transparent;
+  color: rgb(28, 114, 241) !important;
+}
+
+.res-body-div,
+.res-header-div {
+  background-color: white;
+  padding: 1rem;
+}
+
+.header-res {
+  padding: 1rem 1rem 0 1rem;
+}
+
+.header-list {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.header-list:last-child {
+  margin-bottom: 0;
+}
+
+pre {
+  font-size: 1rem;
+}

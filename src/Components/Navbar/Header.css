@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  padding: 0 3rem;
+  background-color: transparent;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+}
+
+.logo h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 1rem;
+  color: var(--color-light);
+}
+
+.header nav ul {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.svg-icon {
+  width: 1em;
+  height: 1em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: var(--color-secondary);
+}
+
+.svg-icon circle {
+  stroke: var(--color-secondary);
+  stroke-width: 1;
+}
