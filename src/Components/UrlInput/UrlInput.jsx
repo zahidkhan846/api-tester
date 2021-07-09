@@ -8,7 +8,7 @@ import ReqInput from "./ReqInput/ReqInput";
 import "./UrlInput.css";
 
 function UrlInput() {
-  const { inputValues } = useRequestContext();
+  const { inputValues, state } = useRequestContext();
 
   const [url, setUrl] = useState("");
   const [method, setMethod] = useState("GET");
@@ -19,6 +19,7 @@ function UrlInput() {
 
   const [showResComp, setShowResComp] = useState(false);
 
+  console.log(state.code);
   const handleSendRequest = async (e) => {
     e.preventDefault();
     const customObj = convertArrayIntoObject(inputValues);
@@ -39,6 +40,7 @@ function UrlInput() {
         method: method,
         params: customObj,
         headers: customObj,
+        data: JSON.parse(state.code) || undefined,
       });
 
       setRes(res);

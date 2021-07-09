@@ -57,7 +57,7 @@ function ResOutput({ res, headers, body }) {
       </div>
       <div>
         {showBody && (
-          <div className="res-body-div">
+          <div className="res-body-div scroll">
             <pre>{JSON.stringify(body, null, 2).replace(/["]/g, "")}</pre>
           </div>
         )}

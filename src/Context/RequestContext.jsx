@@ -4,10 +4,15 @@ const RequestContext = createContext();
 
 export const useRequestContext = () => useContext(RequestContext);
 
+const code = `{
+    "" : ""
+}`;
+
 function RequestProvider(props) {
   const [inputValues, setInputValues] = useState([{ key: "", value: "" }]);
+  const [state, setState] = useState({ code });
 
-  const value = { inputValues, setInputValues };
+  const value = { inputValues, setInputValues, state, setState };
 
   return (
     <RequestContext.Provider value={value}>
